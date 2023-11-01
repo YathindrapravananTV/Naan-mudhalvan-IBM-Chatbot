@@ -1,0 +1,26 @@
+display_information:
+  name: Sherlock
+features:
+  bot_user:
+    display_name: Sherlock
+    always_online: true
+oauth_config:
+  scopes:
+    bot:
+      - app_mentions:read
+      - chat:write
+      - im:read
+      - im:write
+      - im:history
+settings:
+  event_subscriptions:
+    request_url: https://integrations.au-syd.assistant.watson.appdomain.cloud/public/slack/600dd5ef-e1d4-41ea-a250-fa254568758c/message?version=2023-09-15
+    bot_events:
+      - app_mention
+      - message.im
+  interactivity:
+    is_enabled: true
+    request_url: https://integrations.au-syd.assistant.watson.appdomain.cloud/public/slack/600dd5ef-e1d4-41ea-a250-fa254568758c/message?version=2023-09-15
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
